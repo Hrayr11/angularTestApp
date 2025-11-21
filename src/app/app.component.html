@@ -1,9 +1,70 @@
 
-    <nav>
-  <a routerLink="/">Home</a> <!-- Correct label for Home -->
-  <a routerLink="/about">About</a> <!-- Correct label for About -->
-  <a routerLink="/contact-us">Contact Us</a> <!-- Correct label for Contact Us -->
-  <a routerLink="/auth">Auth</a> <!-- Correct label for Auth -->
-</nav>
+<header class="bg-blue-600 text-white py-4 shadow-md">
+  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+    <!-- Logo (optional) -->
+    <div class="text-2xl font-bold">
+      <a href="/" class="text-white hover:text-gray-200">MyApp</a>
+    </div>
 
+    <!-- Navigation Links -->
+    <nav>
+      <ul class="flex space-x-6">
+        <li>
+          <a routerLink="/" class="text-white hover:text-gray-200">Home</a>
+        </li>
+        <li>
+          <a routerLink="/about" class="text-white hover:text-gray-200">About</a>
+        </li>
+        <li>
+          <a routerLink="/contact-us" class="text-white hover:text-gray-200">Contact Us</a>
+        </li>
+        <li>
+          <a routerLink="/auth" class="text-white hover:text-gray-200">Auth</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 <router-outlet></router-outlet>
+<footer class="bg-gray-800 text-white py-8">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <!-- Logo or Brand Name -->
+      <div class="mb-6 md:mb-0">
+        <h3 class="text-2xl font-semibold">MyApp</h3>
+        <p class="text-sm text-gray-400">© 2025 MyApp. All rights reserved.</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="/" class="text-white hover:text-gray-400">Home</a>
+          </li>
+          <li>
+            <a href="/about" class="text-white hover:text-gray-400">About</a>
+          </li>
+          <li>
+            <a href="/contact-us" class="text-white hover:text-gray-400">Contact Us</a>
+          </li>
+          <li>
+            <a href="/auth" class="text-white hover:text-gray-400">Auth</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Social Links Section (Optional) -->
+    <div class="mt-6 flex justify-center space-x-6">
+      <a href="#" class="text-white hover:text-gray-400">
+        <i class="fab fa-facebook-f"></i> <!-- Example FontAwesome Icon -->
+      </a>
+      <a href="#" class="text-white hover:text-gray-400">
+        <i class="fab fa-twitter"></i> <!-- Example FontAwesome Icon -->
+      </a>
+      <a href="#" class="text-white hover:text-gray-400">
+        <i class="fab fa-linkedin-in"></i> <!-- Example FontAwesome Icon -->
+      </a>
+    </div>
+  </div>
+</footer>

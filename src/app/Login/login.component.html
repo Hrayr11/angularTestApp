@@ -1,13 +1,11 @@
 <section class="h-screen bg-gray-100 flex flex-col justify-center">
-  <div class="max-w-md mx-auto px-6">
+  <div class="min-w-lg mx-auto px-6">
     <h2 class="text-3xl font-bold text-center text-blue-600 mb-6">Login</h2>
 
-    <!-- Authentication Form -->
     <div class="bg-white p-8 rounded-lg shadow-lg">
       <form [formGroup]="login" (ngSubmit)="onSubmit()" >
-        <!-- Email Field -->
         <div class="mb-4">
-          <label for="email" class="block text-gray-700 text-sm font-semibold mb-2">Email</label>
+          <label for="username" class="block text-gray-700 text-sm font-semibold mb-2">username</label>
           <input 
             type="text" 
             id="username" 
@@ -18,7 +16,6 @@
           />
         </div>
 
-        <!-- Password Field -->
         <div class="mb-4">
           <label for="password" class="block text-gray-700 text-sm font-semibold mb-2">Password</label>
           <input 
@@ -27,16 +24,17 @@
             name="password" 
             class="w-full p-3 border border-gray-300 rounded-md" 
             placeholder="Your Password" 
-            required
+            formControlName="password"
           />
         </div>
-
-        <!-- Submit Button -->
+         
         <button 
           type="submit" 
           class="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-500 focus:outline-none">
           Login
         </button>
+
+          <div routerLink="/register" class="mt-4 text-center text-blue-600"><a class="cursor-pointer">Don't have an account?</a></div> 
       </form>
     </div>
   </div>

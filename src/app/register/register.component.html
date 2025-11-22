@@ -1,0 +1,67 @@
+<div class="h-screen flex items-center justify-center bg-gray-100">
+  <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+    <h2 class="text-2xl font-bold text-center text-gray-700 mb-6">Create Account</h2>
+
+    <form>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium text-gray-600">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"
+               class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+      </div>
+
+      <div class="mb-4">
+        <label for="login" class="block text-sm font-medium text-gray-600">Login</label>
+        <input type="text" id="login" name="login" placeholder="Enter your login"
+               class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+      </div>
+
+      <div class="mb-4">
+        <label for="password" class="block text-sm font-medium text-gray-600">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password"
+               class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+      </div>
+
+      <div class="mb-4 flex space-x-2">
+        <div class="w-1/4">
+          <label for="extension" class="block text-sm font-medium text-gray-600">Extension</label>
+          <input type="text" id="extension" name="extension" placeholder="+123"
+                 class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div class="w-3/4">
+          <label for="phone" class="block text-sm font-medium text-gray-600">Phone Number</label>
+          <input type="text" id="phone" name="phone" placeholder="456789"
+                 class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label for="age" class="block text-sm font-medium text-gray-600">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age"
+               class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+      </div>
+
+      <div class="mb-4">
+        <label for="country" class="block text-sm font-medium text-gray-600">Country</label>
+        <select id="country" name="country"
+                class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+          <option value="">Select Country</option>
+          <option value="US">United States</option>
+          <option value="UK">United Kingdom</option>
+          <option value="CA">Canada</option>
+          <option value="AU">Australia</option>
+        </select>
+      </div>
+
+      <div class="mb-6">
+        <button type="submit"
+                class="w-full py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          Register
+        </button>
+      </div>
+
+      <p routerLink="/login" class="text-center text-sm text-gray-600">
+        <a  class="text-blue-600 cursor-pointer">Do you have an account?</a>
+      </p>
+    </form>
+  </div>
+</div>

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterLink } from "@angular/router";
 import { TeamComponent } from "../team/team.component";
 import { BlogComponent } from '../blog/blog.component';
 import { CommissionComponent } from '../commission/commission.component';
@@ -11,13 +10,14 @@ import { TestimonialsComponent } from '../testimonials/testimonials.component';
 import { JoinUsComponent } from "../join-us/join-us.component";
 import { OurFeaturesComponent } from "../our-features/our-features.component";
 import { WelcomeComponent } from '../welcome/welcome.component';
+import { AboutComponent } from "../about/about.component";
 
 @Component({
   selector: 'app-home',
-  imports: [TeamComponent, BlogComponent, CommissionComponent,WelcomeComponent, FAQComponent, NewsletterComponent, OurServicesComponent, PricingComponent, TestimonialsComponent, JoinUsComponent, OurFeaturesComponent],
+  imports: [TeamComponent,AboutComponent, BlogComponent, CommissionComponent, WelcomeComponent, FAQComponent, NewsletterComponent, OurServicesComponent, PricingComponent, TestimonialsComponent, JoinUsComponent, OurFeaturesComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss' 
 })
-export class HomeComponent {
-
+export class HomeComponent { 
+  
 }
